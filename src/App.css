@@ -1,12 +1,21 @@
 @import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #root {
-  max-width: 1280px; /* Limita el ancho máximo del contenido */
-  text-align: center; /* Centra el texto dentro del contenedor */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center; 
+  height: 100%;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  padding: .5em;
   will-change: filter;
   transition: filter 300ms;
 }
@@ -17,29 +26,6 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
 /* Estilos para el navbar */
 .navbar {
   display: flex;
@@ -48,8 +34,6 @@
   padding: 1rem 2rem; /* Espaciado interno */
   background-color: #007bff; /* Color de fondo azul */
   color: white;
-  border-radius: 0.5rem; /* Bordes redondeados opcionales */
-  max-width: 1280px; /* Asegura que el navbar no exceda el ancho del contenedor */
   margin: 0 auto; /* Centra el navbar horizontalmente */
 }
 

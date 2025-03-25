@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import CarouselComponent from "./components/CarouselComponent";
+import FooterComponent from "./components/footerComponent";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Projects from "./pages/projects";
@@ -28,10 +29,15 @@ function App() {
         <Route
           path="/"
           element={
-            <div>
-              <h1>Welcome to Stealframing Construction</h1>
-              <p>We specialize in modern and innovative construction solutions.</p>
-              <CarouselComponent />
+            <div className="app">
+              <div className="carousel-container">
+                <div className="carousel-text">
+                  <h1>Welcome to Stealframing Construction</h1>
+                  <p>We specialize in modern and innovative construction solutions.</p>
+                </div>
+                <CarouselComponent />
+                <FooterComponent />
+              </div>
             </div>
           }
         />
