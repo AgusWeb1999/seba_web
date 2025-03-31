@@ -1,12 +1,12 @@
-import React from "react";
-import { Link } from "react-router-dom"; // Importa Link desde react-router-dom
-import "../css/NavComponent.css"; 
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../css/NavComponent.css'; // Importa los estilos del navbar
 
-function NavComponent() {
+const NavComponent = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <Link to="/">Stealframing</Link> {/* Este enlace lleva a la página principal */}
+        <Link to="/">Steelframing</Link>
       </div>
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>
@@ -17,6 +17,6 @@ function NavComponent() {
       </ul>
     </nav>
   );
-}
+};
 
 export default NavComponent;
