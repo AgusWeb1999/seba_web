@@ -64,6 +64,8 @@ const ContactForm = () => {
                 />
                 {errors.name && <span className="error-message">{errors.name.message}</span>}
               </div>
+            </div>
+            <div className="form-row">
               <div className="form-group">
                 <input
                   type="email"
