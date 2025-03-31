@@ -1,9 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
-import "./app.css";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App'; // Importa el componente principal de tu aplicación
+import './app.css'; // Importa tus estilos personalizados después de Bootstrap
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+// Usa createRoot para gestionar el árbol principal de React
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
