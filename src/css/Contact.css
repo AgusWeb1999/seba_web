@@ -1,0 +1,54 @@
+:root {
+    --primary-color: #1E3A8A; /* Azul acero */
+    --secondary-color: #F3F4F6; /* Gris claro */
+    --accent-color: #F97316; /* Naranja cálido */
+    --text-primary: #111827; /* Negro carbón */
+    --text-secondary: #6B7280; /* Gris medio */
+}
+  
+.contact-form {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--secondary-color); /* Fondo neutro */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+  
+.form-input {
+    padding: 10px;
+    border: 1px solid var(--text-secondary);
+    border-radius: 5px;
+    font-size: 16px;
+}
+  
+.form-input:focus {
+    outline: none;
+    border-color: var(--primary-color); /* Azul acero */
+    box-shadow: 0 0 5px var(--primary-color);
+}
+  
+.submit-btn {
+    padding: 10px 20px;
+    background-color: var(--accent-color); /* Naranja cálido */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+  .submit-btn:hover {
+    background-color: #ea580c; /* Un tono más oscuro del naranja */
+}
+  
+.error-message {
+    color: red;
+    font-size: 14px;
+}

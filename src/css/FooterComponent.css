@@ -1,28 +1,42 @@
 .footer {
-    background-color: #333; /* Mismo color de fondo que el nav */
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .footer-logo .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .footer-text {
-    margin-top: 20px;
-    font-size: 0.875rem;
-    color: #ccc;
-  }
+  background-color: var(--primary-color); /* Azul acero */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Separa los elementos al máximo */
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-logo .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-text {
+  font-size: 0.875rem;
+  color: var(--secondary-color); /* Gris claro */
+}
+
+.footer-text a {
+  color: var(--accent-color); /* Naranja cálido */
+  text-decoration: none;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}
