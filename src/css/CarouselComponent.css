@@ -1,7 +1,7 @@
 .carousel {
   position: relative;
   width: 100%;
-  height: calc(100vh - 60px - 60px); /* Ajusta 60px según la altura del navbar y footer */
+  height: 100vh;; /* Ajusta 60px según la altura del navbar y footer */
   overflow: hidden;
 }
 

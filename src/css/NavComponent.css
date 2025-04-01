@@ -3,18 +3,23 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: var(--primary-color); /* Azul acero */
+  background-color: transparent; /* Transparente */
   color: white;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
 }
-
+.navbar:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente al pasar el mouse */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.7); /* Sombra azul más pronunciada */
+}
 .navbar .logo {
   font-size: 1.5rem;
   font-weight: bold;
+  font-family: 'Poppins', sans-serif; /* Fuente amigable */
   color: white;
   text-decoration: none;
 }
@@ -27,13 +32,18 @@
   padding: 0;
 }
 
+
 .navbar .nav-links a {
   text-decoration: none;
   color: white;
-  font-size: 1rem;
-  transition: color 0.3s ease;
+  font-size: 1rem; /* Tamaño de fuente estándar */
+  font-weight: 500; /* Peso medio */
+  font-family: 'Poppins', sans-serif; /* Fuente amigable */
+  letter-spacing: 0.5px; /* Espaciado entre letras */
+  transition: color 0.3s ease, transform 0.3s ease; /* Transición para el color y el movimiento */
 }
 
 .navbar .nav-links a:hover {
-  color: var(--accent-color); /* Naranja cálido */
+  color: var(--accent-color); /* Cambia a un color naranja cálido */
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño del enlace */
 }
