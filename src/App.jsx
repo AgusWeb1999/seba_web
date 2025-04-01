@@ -25,7 +25,9 @@ function App() {
                 <CarouselComponent />
               </div>
             }
+            
           />
+          
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/projects" element={<Projects />} />
@@ -38,3 +40,4 @@ function App() {
 }
 
 export default App;
+

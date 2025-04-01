@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(--primary-color); /* Azul acero */
+  background-color: #444444; /* Cambiado a gris oscuro */
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -8,14 +8,13 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between; /* Separa los elementos al máximo */
   align-items: center;
-  max-width: 1200px;
+  max-width: 2000px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -29,7 +28,7 @@
 
 .footer-text {
   font-size: 0.875rem;
-  color: var(--secondary-color); /* Gris claro */
+  color: #ccc; /* Cambiado a gris claro */
 }
 
 .footer-text a {
