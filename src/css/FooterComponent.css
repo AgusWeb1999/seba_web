@@ -1,11 +1,11 @@
 .footer {
   background-color: #444444; /* Cambiado a gris oscuro */
   color: white;
-  padding: 20px 0;
+  padding: 1vh;
   text-align: center;
-  position: fixed;
   bottom: 0;
   left: 0;
+  height: 5vh;
   width: 100%;
   z-index: 1000;
 }
@@ -24,11 +24,13 @@
   font-weight: bold;
   color: white;
   text-decoration: none;
+  font-family: 'Poppins', sans-serif;
 }
 
 .footer-text {
   font-size: 0.875rem;
-  color: #ccc; /* Cambiado a gris claro */
+  color: #ccc; 
+  font-family: 'Poppins', sans-serif;
 }
 
 .footer-text a {

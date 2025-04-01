@@ -25,7 +25,6 @@ function Projects() {
 
   return (
     <div className="projects-page">
-      <h1 className="projects-title">Our Projects</h1>
       <div className="card-container">
         {projects.map((project, index) => (
           <div key={index} className="card">

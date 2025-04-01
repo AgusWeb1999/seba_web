@@ -1,13 +1,18 @@
+body{
+  background-image: url('/src/images/image.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .projects-page {
     padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #f4f4f4;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 7vh;
+    max-width: 50vw;
+    margin: 6vh auto;
   }
   
-  .projects-title {
+.projects-title {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 40px;
@@ -21,40 +26,52 @@
     gap: 20px;
   }
   
-  .card {
+.card {
     display: flex;
     flex-direction: column; /* Cambia a columna para pantallas pequeñas */
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    transition: transform 0.3s ease;
+
   }
   
-  .card img {
+.card img {
     width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
     height: 300px; /* Ajusta la altura de la imagen */
     object-fit: cover;
-    transition: transform 0.3s ease;
   }
   
-  .card img:hover {
-    transform: scale(1.1); /* Agranda la imagen al pasar el mouse */
+.card:hover {
+    transform: scale(1.05); /* Agranda la imagen al pasar el mouse */
   }
   
-  .card-content {
+.card-content {
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
   }
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+.card-description {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+  }
   
-  .get-quote-button {
-    background-color: #ff0000;
+.get-quote-button {
+    background-color: #F97316;
     color: #fff;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 10px;
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
@@ -62,13 +79,13 @@
     align-self: flex-end;
   }
   
-  .get-quote-button:hover {
+.get-quote-button:hover {
     transform: scale(1.1);
-    background-color: #cc0000;
+    background-color: #ea580c;
   }
   
   /* Responsive styles for smaller screens */
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .card {
       flex-direction: column; /* Cambia a columna para pantallas pequeñas */
       height: auto; /* Ajusta automáticamente la altura */
@@ -88,7 +105,7 @@
     }
   }
   
-  @media (max-width: 480px) {
+@media (max-width: 480px) {
     .projects-title {
       font-size: 1.8rem; /* Reduce el tamaño del título */
     }

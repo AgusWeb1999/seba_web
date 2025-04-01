@@ -19,8 +19,13 @@ function App() {
             element={
               <div className="carousel-container">
                 <div className="carousel-text">
-                  <h1>Welcome to Stealframing Construction</h1>
-                  <p>We specialize in modern and innovative construction solutions.</p>
+                  <div className="carousel-principal-text">
+                    <h1>Welcome to Stealframing Construction</h1>
+                    <p>We specialize in modern and innovative construction solutions.</p>
+                  </div>
+                  <div className="carousel-button">
+                    <a href="/projects" className="btn">View Our Projects</a>
+                  </div>
                 </div>
                 <CarouselComponent />
               </div>
