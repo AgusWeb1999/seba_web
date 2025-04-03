@@ -24,7 +24,11 @@ const ContactForm = () => {
       setAlertInfo({ display: false, message: '', type: '' });
     }, 5000);
   };
-
+  {alertInfo.display && (
+    <div className={`alert ${alertInfo.type}`}>
+      {alertInfo.message}
+    </div>
+  )}
   const onSubmit = async (data) => {
     const { name, email, subject, message, image } = data;
     try {
