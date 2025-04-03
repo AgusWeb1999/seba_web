@@ -22,7 +22,7 @@
 }
 
 .logo{
-  max-width: 12vw;
+  max-width: 18vh;
 }
 
 .logo_secundario{
@@ -32,16 +32,17 @@
 .navbar .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 4vw;
   margin: 0;
   padding: 0;
+  justify-content: end;
 }
 
 
 .navbar .nav-links a {
   text-decoration: none;
   color: rgb(255, 255, 255);
-  font-size: 1rem; /* Tamaño de fuente estándar */
+  font-size: clamp(.7rem, 1.5vw, 1rem);
   font-weight: 500; /* Peso medio */
   font-family: 'Poppins', sans-serif; /* Fuente amigable */
   letter-spacing: 0.5px; /* Espaciado entre letras */
@@ -57,11 +58,13 @@
 @media (max-width: 768px) {
   .navbar {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 5fr;
     align-items: center;
     padding: 1rem 2rem;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
   }
-
   .logo{
     display: none;
   }
@@ -69,7 +72,5 @@
   .logo_secundario{
     display: block;
     width: clamp(1rem, 1.5rem, 2rem);
-
   }
-
 }

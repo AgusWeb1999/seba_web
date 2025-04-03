@@ -36,6 +36,9 @@
 }
 
 .carousel-principal-text {
+  display: grid;
+  gap: 2vh;
+  justify-items: center;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.483);
   border-radius: 10px;
@@ -78,4 +81,22 @@
 .carousel-button a:active {
   transform: scale(0.95); /* Efecto de clic */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más pequeña */
+}
+
+@media (max-width: 768px) {
+  .carousel-principal-text{
+    width: 90vw;
+  }
+
+  .carousel-principal-text img{
+    max-height: 15vh;
+  }
+  .carousel-text h1 {
+    font-size: 20px;
+    
+  }
+  .carousel-text p {
+    font-size: 15px;
+  }
+  
 }

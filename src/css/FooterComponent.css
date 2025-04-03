@@ -20,7 +20,7 @@
 }
 
 .footer-logo .logo {
-  font-size: 1.5rem;
+  font-size: clamp(.7rem, 1.5vw, 1rem);
   font-weight: bold;
   color: white;
   text-decoration: none;
@@ -28,7 +28,7 @@
 }
 
 .footer-text {
-  font-size: 0.875rem;
+  font-size: clamp(.7rem, 1.5vw, 1rem);
   color: #ccc; 
   font-family: 'Poppins', sans-serif;
 }
@@ -40,4 +40,13 @@
 
 .footer-text a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer-text {
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+  }
+  
 }

@@ -19,7 +19,7 @@
     background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para destacar el formulario */
     padding: 20px;
     border-radius: 10px;
-    max-width: 25vw;
+    max-width: 35vw;
     margin: 0 auto;
     margin-top: 30vh;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -70,4 +70,12 @@
 
   .form-input {
     width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .contact-content {
+      max-width: 90vw;
+      margin-top: 15vh;
+      min-height: 60vh;
+    }
   }

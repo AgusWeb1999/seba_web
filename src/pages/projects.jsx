@@ -32,7 +32,7 @@ function Projects() {
             <div className="card-content">
               <h2 className="card-title">{project.title}</h2>
               <p className="card-description">{project.description}</p>
-              <button className="get-quote-button">Get Quote</button>
+              <a href="/contact" className="get-quote-button">Get Quote</a>
             </div>
           </div>
         ))}
