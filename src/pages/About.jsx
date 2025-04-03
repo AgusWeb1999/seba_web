@@ -1,14 +1,12 @@
 import React from "react";
-import "../css/about.css"; // Asegúrate de tener un archivo CSS para estilos personalizados
+import "../css/about.css"; 
+import CarouselComponent from "../components/CarouselComponent"; 
 
 function About() {
   return (
     <div className="about-page">
-      <div className="about-image">
-        <img
-          src="/src/images/contruction1.jpg" // Cambia esta ruta a la del logo de la empresa.
-          alt="About Us"
-        />
+      <div className="about-carousel">
+        <CarouselComponent />
       </div>
       <div className="about-content">
         <h1>About Us</h1>

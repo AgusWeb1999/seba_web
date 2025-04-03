@@ -7,7 +7,7 @@ import About from "./pages/About";
 import Projects from "./pages/projects";
 import Services from "./pages/Services";
 import "./App.css";
-import logo from './images/logo_secundario.png';
+import logo_secundario from './images/logo_secundario.png'; // Importa la imagen aquí
 
 function App() {
   return (
@@ -21,8 +21,7 @@ function App() {
               <div className="carousel-container">
                 <div className="carousel-text">
                   <div className="carousel-principal-text">
-                  <img src={logo} alt="Logo principal" />
-
+                    <img src={logo_secundario} alt="Logo" />
                     <h1>Welcome to Stealframing Construction</h1>
                     <p>We specialize in modern and innovative construction solutions.</p>
                   </div>
