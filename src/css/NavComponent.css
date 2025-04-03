@@ -21,6 +21,14 @@
   text-decoration: none;
 }
 
+.logo{
+  max-width: 12vw;
+}
+
+.logo_secundario{
+  display: none;
+}
+
 .navbar .nav-links {
   list-style: none;
   display: flex;
@@ -43,4 +51,25 @@
 .navbar .nav-links a:hover {
   color: var(--accent-color); 
   transform: scale(1.1); 
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+
+  .logo{
+    display: none;
+  }
+  
+  .logo_secundario{
+    display: block;
+    width: clamp(1rem, 1.5rem, 2rem);
+
+  }
+
 }
