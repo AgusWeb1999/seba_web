@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Importa Link para la navegación
-import "../css/services.css"; // Asegúrate de crear este archivo para los estilos
+import { Link } from "react-router-dom"; 
+import "../css/services.css"; 
 
 const servicesData = [
   {
@@ -49,7 +49,6 @@ const servicesData = [
 function Services() {
   return (
     <div className="services-page">
-      <h1>Our Services</h1>
       <div className="services-grid">
         {servicesData.map((service, index) => (
           <div className="service-card" key={index}>

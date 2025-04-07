@@ -3,5 +3,8 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/seba_web', 
+  server: {
+    hmr: true,
+    historyApiFallback: true,
+  }, 
 });
