@@ -5,7 +5,7 @@ import NavComponent from "./components/NavComponent";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Projects from "./pages/projects";
-import Services from "./pages/Services";
+import Services from "./pages/services";
 import "./App.css";
 import logo_secundario from './images/logo_secundario.png'; // Importa la imagen aquí
 
