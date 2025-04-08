@@ -6,8 +6,9 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Projects from "./pages/projects";
 import Services from "./pages/services";
+import WhatsAppButton from "./components/WhatsAppButton"; 
 import "./App.css";
-import logo_secundario from './images/logo_secundario.png'; // Importa la imagen aquí
+import logo_secundario from './images/logo_secundario.png'; 
 
 function App() {
   return (
@@ -40,7 +41,8 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <FooterComponent /> {/* El footer debe estar fuera de Routes */}
+        <FooterComponent />
+        <WhatsAppButton /> 
       </div>
     </Router>
   );
