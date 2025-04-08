@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import "../css/CarouselComponent.css"; // Asegúrate de crear este archivo para los estilos
 
 const images = [
-  "/src/images/WhatsApp Image 2025-03-31 at 17.00.10_486a56b6.jpg",
-  "/src/images/WhatsApp Image 2025-03-31 at 17.00.10_4e2da799.jpg",
-  "/src/images/WhatsApp Image 2025-03-31 at 17.00.12_97f909fa.jpg",
-  "/src/images/WhatsApp Image 2025-03-31 at 17.00.14_8edf9ea6.jpg",
-  "/src/images/WhatsApp Image 2025-03-31 at 17.00.13_fbd6c1f3.jpg",
+  "./images/WhatsApp Image 2025-03-31 at 17.00.10_486a56b6.jpg",
+  "./images/WhatsApp Image 2025-03-31 at 17.00.10_4e2da799.jpg",
+  "./images/WhatsApp Image 2025-03-31 at 17.00.12_97f909fa.jpg",
+  "./images/WhatsApp Image 2025-03-31 at 17.00.14_8edf9ea6.jpg",
+  "./images/WhatsApp Image 2025-03-31 at 17.00.13_fbd6c1f3.jpg",
 ];
 
 function CarouselComponent() {
