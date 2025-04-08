@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "../css/CarouselComponent.css"; // Asegúrate de crear este archivo para los estilos
+import image1 from "../images/WhatsApp Image 2025-03-31 at 17.00.10_486a56b6.jpg";
+import image2 from "../images/WhatsApp Image 2025-03-31 at 17.00.10_4e2da799.jpg";
+import image3 from "../images/WhatsApp Image 2025-03-31 at 17.00.12_97f909fa.jpg";
+import image4 from "../images/WhatsApp Image 2025-03-31 at 17.00.14_8edf9ea6.jpg";
+import image5 from "../images/WhatsApp Image 2025-03-31 at 17.00.13_fbd6c1f3.png";
 
-const images = [
-  "/src/images/WhatsApp Image 2025-03-31 at 17.00.10_486a56b6.jpg",
-  "/src/images/WhatsApp Image 2025-03-31 at 17.00.10_4e2da799.jpg",
-  "/src/images/WhatsApp Image 2025-03-31 at 17.00.12_97f909fa.jpg",
-  "/src/images/WhatsApp Image 2025-03-31 at 17.00.14_8edf9ea6.jpg",
-  "/src/images/WhatsApp Image 2025-03-31 at 17.00.13_fbd6c1f3.jpg",
-];
+const images = [image1, image2, image3, image4, image5];
 
 function CarouselComponent() {
   const [currentIndex, setCurrentIndex] = useState(0);
