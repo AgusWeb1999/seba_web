@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://agusweb1999.github.io/seba_web",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
