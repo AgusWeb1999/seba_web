@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/projects.css";
+import { Link } from "react-router-dom"; 
 
 // Importa las imágenes directamente
 import bathroomImage from "../images/WhatsApp Image 2025-03-31 at 17.00.10_3a0332df.jpg";
