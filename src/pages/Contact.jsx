@@ -24,36 +24,41 @@ const ContactForm = () => {
       setAlertInfo({ display: false, message: '', type: '' });
     }, 5000);
   };
-  {alertInfo.display && (
-    <div className={`alert ${alertInfo.type}`}>
-      {alertInfo.message}
-    </div>
-  )}
+
   const onSubmit = async (data) => {
-    const { name, email, subject, message, image } = data;
     try {
       setDisabled(true);
 
-      // Crear un objeto FormData para enviar la imagen y los datos
-      const formData = new FormData();
-      formData.append('name', name);
-      formData.append('email', email);
-      formData.append('subject', subject);
-      formData.append('message', message);
-      formData.append('image', image[0]); // Agregar la imagen seleccionada
+      // Leer el archivo de imagen y convertirlo a base64
+      let base64Image = '';
+      if (data.image && data.image[0]) {
+        const file = data.image[0];
+        base64Image = await new Promise((resolve, reject) => {
+          const reader = new FileReader();
+          reader.onload = () => resolve(reader.result);
+          reader.onerror = (error) => reject(error);
+          reader.readAsDataURL(file);
+        });
+      }
 
-      // Enviar los datos a través de emailjs o tu backend
+      // Enviar los datos a través de EmailJS
       await emailjs.send(
         import.meta.env.VITE_SERVICE_ID,
         import.meta.env.VITE_TEMPLATE_ID,
-        formData,
+        {
+          name: data.name,
+          email: data.email,
+          subject: data.subject,
+          message: data.message,
+          image: base64Image, 
+        },
         import.meta.env.VITE_PUBLIC_KEY
       );
 
-      toggleAlert('Form submission was successful!', 'success');
+      toggleAlert('¡El formulario se envió correctamente!', 'success'); // Mensaje de éxito
     } catch (e) {
       console.error(e);
-      toggleAlert('Uh oh. Something went wrong.', 'danger');
+      toggleAlert('Uh oh. Algo salió mal.', 'danger');
     } finally {
       setDisabled(false);
       reset();
@@ -67,6 +72,11 @@ const ContactForm = () => {
       </div>
       <div className="contact-content">
         <h1>Contact Us</h1>
+        {alertInfo.display && (
+          <div className={`alert ${alertInfo.type}`}>
+            {alertInfo.message}
+          </div>
+        )}
         <form id="contact-form" onSubmit={handleSubmit(onSubmit)} noValidate>
           <div className="form-row">
             <div className="form-group">
@@ -135,6 +145,7 @@ const ContactForm = () => {
               id="image"
               {...register('image')}
               className="form-input"
+              accept="image/*" // Asegurarse de aceptar solo imágenes
               />
             </div>
           </div>
