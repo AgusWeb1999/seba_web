@@ -11,7 +11,7 @@ function About() {
       <div className="about-content">
         <h1>About Us</h1>
         <p>
-          At Mazz Service LLS, we specialize in steelframing construction, bathroom and kitchen renovations, and general construction projects.
+          At Mazz Service LLC, we specialize in steelframing construction, bathroom and kitchen renovations, and general construction projects.
         </p>
         <p>
           With years of experience in the industry, we provide innovative and efficient solutions to transform any space into a functional, safe, and modern environment.
@@ -24,16 +24,16 @@ function About() {
           We take pride in our attention to detail, customer satisfaction, and on-time project delivery. If you're looking for quality, innovation, and reliability, we are your best choice.
         </p>
         <address>
-          📍 Location: Miami, USA
+          📍 Location: Pompano Beach, Florida.
         </address>
         <p>
           📞 Contact: <a href="tel:7866420542">(786) 642-0542</a>
         </p>
         <p>
-          📩 Email: <a href="mailto:sebamazz10@gmail.com">sebamazz10@gmail.com</a>
+          📩 Email: <a href="mailto:Mazzservicellc@gmail.com">Mazzservicellc@gmail.com</a>
         </p>
         <p>
-          <a href="/Contact">  Or complete our form here and I will contact you shortly</a>
+        <a href="/Contact">Or complete our form <strong>here</strong> and I will contact you shortly</a>
         </p>
       </div>
     </div>
