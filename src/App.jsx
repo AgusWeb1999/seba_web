@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Link } from "react-router-dom"; 
 import CarouselComponent from "./components/CarouselComponent";
 import FooterComponent from "./components/FooterComponent";
 import NavComponent from "./components/NavComponent";
@@ -27,7 +28,9 @@ function App() {
                     <p>We specialize in modern and innovative construction solutions.</p>
                   </div>
                   <div className="carousel-button">
-                    <a href="/projects" className="btn">View Our Projects</a>
+                    <Link to="/projects" className="btn">
+                    View Our Projects
+                    </Link>
                   </div>
                 </div>
                 <CarouselComponent />
