@@ -37,7 +37,9 @@ function Projects() {
             <div className="card-content">
               <h2 className="card-title">{project.title}</h2>
               <p className="card-description">{project.description}</p>
-              <a href="/contact" className="get-quote-button">Get Quote</a>
+              <Link to="/contact" className="get-quote-button">
+              Get Quote
+              </Link>
             </div>
           </div>
         ))}
