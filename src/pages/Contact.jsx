@@ -55,10 +55,10 @@ const ContactForm = () => {
         import.meta.env.VITE_PUBLIC_KEY
       );
 
-      toggleAlert('¡El formulario se envió correctamente!', 'success'); // Mensaje de éxito
+      toggleAlert('¡The form was submitted successfully!', 'success'); // Mensaje de éxito
     } catch (e) {
       console.error(e);
-      toggleAlert('Uh oh. Algo salió mal.', 'danger');
+      toggleAlert('Something went wrong.', 'danger');
     } finally {
       setDisabled(false);
       reset();
