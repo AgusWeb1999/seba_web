@@ -24,7 +24,7 @@ function App() {
                 <div className="carousel-text">
                   <div className="carousel-principal-text">
                     <img src={logo_secundario} alt="Logo" />
-                    <h1>Welcome to Stealframing Construction</h1>
+                    <h1>Welcome to Steelframing Construction</h1>
                     <p>We specialize in modern and innovative construction solutions.</p>
                   </div>
                   <div className="carousel-button">
