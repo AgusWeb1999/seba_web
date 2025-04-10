@@ -9,7 +9,7 @@ function FooterComponent() {
           <a href="#" className="logo">Stealframing Construction</a>
         </div>
         <div className="footer-text">
-            <p>&copy; 2024 Stealframing Construction. All rights reserved..</p>
+            <p>&copy; 2025 Steelframing Construction. All rights reserved.</p>
         </div>
       </div>
     </footer>
